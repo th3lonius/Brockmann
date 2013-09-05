@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/*
+Title: Screen styles
+Author: Matthew Mesaros (mesaros.creative@gmail.com)
+*/
+
+/* CSS Document */
+
+/* =RESET
+----------------------------------------------- */
+* {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    widows: no-wrap;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+ol,ul {
+    list-style: none;
+}
+:focus {
+    outline: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* =BASIC
+----------------------------------------------- */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+img, object, embed {
+    max-width: 100%;
+    height: auto; }
+
+p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+em { font-style: italic; }
+
+
+/* =REUSABLE CLASSES
+----------------------------------------------- */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.group { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .group { height: 1%; } /* IE6 */
+*:first-child+html .group { min-height: 1px; } /* IE7 */
+/* End hide from IE-mac */
+
+
+/* =LINKS
+----------------------------------------------- */
+a:link, a:visited {
+    color: #A53523;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D9663C;
+}
+
+/* =PAGE LAYOUT
+----------------------------------------------- */
+
+body {
+    color: #333;
+    font-family: "brandon-grotesque";
+    font-size: 100%;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+header {
+}
+
+.item {
+    float: left;
+    height: 180px;
+    width: 300px;
+}
+
+.item a {
+    display: block;
+}
+
+@media only screen 
+and (min-width: 200px) {
+    .container {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow-y: scroll;
+        width: 100%;
+    }
+    
+    .review_container {
+        background: #FFF;
+        margin-top: 100px;
+        padding: 40px;
+        position: relative;
+        width: 100%;
+    }
+    
+    .review_body {
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .review_body p {
+        font-size: 1.125em;
+        font-weight: 300;
+    }
+    
+    aside.film_data {
+        float: none;
+        margin-right: 24px;
+        width: 100%;
+    }
+    
+    .review_meta {
+        padding-top: 60px;
+        position: fixed;
+    }
+    
+    .review_meta h1 {
+        color: #FFF;
+        font-family: "velino-poster";
+        font-size: 6.25em;
+        line-height: 1;
+        text-shadow: 4px 6px 1px rgba(0,0,0,0.2);
+    }
+    
+    .review_meta aside {
+        color: #FFF;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1.3;
+        text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+    }
+    
+    .review_meta aside em {
+        font-weight: 300;
+    }
+    
+    aside.film_data ul li {
+        font-size: 1.375em;
+        font-weight: 300;
+        line-height: 1.5em;
+        text-align: left;
+    }
+    
+    aside.film_data ul li em { color: tomato; }
+    
+    .review_container a {
+        background: #E6E7E8;
+        color: #666;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 0;
+        max-height: 56px;
+        padding: 28px 40px;
+        position: absolute;
+        top: -58px;
+        left: 0;
+        width: 163px;
+    }
+    
+    .social {
+        background-position: center center;
+        background-repeat: no-repeat;
+        bottom: 40px;
+        display: block;
+        padding: 20px;
+        position: absolute;
+    }
+    
+    .facebook {
+        background-color: #3B5998;
+        background-image: url(img/facebook.svg);
+        height: 29px;
+        left: 40px;
+        width: 14px;
+    }
+    
+    .twitter {
+        background-color: #38ACE0;
+        background-image: url(img/twitter.svg);
+        height: 23px;
+        left: 90px;
+        width: 33px;
+    }
+    
+    .google {
+        background-color: #DD4B39;
+        background-image: url(img/google.svg);
+        height: 32px;
+        left: 140px;
+        width: 21px;
+    }
+}
+
+@media only screen 
+and (min-width: 720px) {
+    .review_body p { font-size: 1.375em; }
+}
+
+@media only screen 
+and (min-width: 1024px) {
+    .container { padding-top: 100px; }
+    .review_body {
+        margin: 0 auto;
+        width: 62.5%;
+    }
+}
+
+@media only screen 
+and (min-width: 1280px) {
+
+    
+}
+

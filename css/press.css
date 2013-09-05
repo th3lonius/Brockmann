@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*
+Title: Screen styles
+Author: Matthew Mesaros (mesaros.creative@gmail.com)
+*/
+
+/* CSS Document */
+
+/* =RESET
+----------------------------------------------- */
+* {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    widows: no-wrap;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+
+ol,ul {
+    list-style: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* =BASIC
+----------------------------------------------- */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+img, object, embed {
+    max-width: 100%;
+    height: auto; }
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    margin-bottom: 1em;
+}
+
+em { font-style: italic; }
+
+
+/* =REUSABLE CLASSES
+----------------------------------------------- */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.group { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .group { height: 1%; } /* IE6 */
+*:first-child+html .group { min-height: 1px; } /* IE7 */
+/* End hide from IE-mac */
+
+
+/* =LINKS
+----------------------------------------------- */
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+/* =LAYOUT
+----------------------------------------------- */
+
+.wrapper {
+    left: 0;
+    overflow: visible;
+    position: relative;
+}
+
+/* =PRESS
+----------------------------------------------- */
+
+section#pressContent author {
+    font-style: italic;
+}
+
+section#pressContent a {
+    color: #404040;
+}
+
+time::before {
+    content: "-";
+}
