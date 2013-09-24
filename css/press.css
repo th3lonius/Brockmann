@@ -99,23 +99,9 @@ a, a:link, a:visited {
 /* =LAYOUT
 ----------------------------------------------- */
 
-.wrapper {
+#wrapper {
     left: 0;
     overflow: visible;
     position: relative;
 }
 
-/* =PRESS
------------------------------------------------ */
-
-section#pressContent author {
-    font-style: italic;
-}
-
-section#pressContent a {
-    color: #404040;
-}
-
-time::before {
-    content: "-";
-}

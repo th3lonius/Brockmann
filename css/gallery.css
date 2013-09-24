@@ -102,77 +102,9 @@ a, a:link, a:visited {
 /* =LAYOUT
 ----------------------------------------------- */
 
-.wrapper {
+#wrapper {
     left: 0;
     overflow: visible;
     position: relative;
 }
 
-/* =GALLERY
------------------------------------------------ */
-
-section#gallery ul li {
-    display: inline-block;
-    width: 33%;
-}
-
-section#gallery ul li a {
-    cursor: crosshair;
-    display: block;
-    padding: 10px;
-}
-
-    
-.rightPanel {
-    right: 0;
-    height: 100%;
-    padding: 64px 80px;
-    position: fixed;
-    text-align: left;
-    width: 31%;
-}
-
-#pieceDetails {
-    background: rgba(0,0,0,0.2);
-    color: #FFF;
-    font-family: "brandon-grotesque";
-    line-height: 1.2;
-    -webkit-transition: all 0.5s ease;
-}
-
-#pieceDetails a {
-    color: #FFF;
-}
-
-#pieceDetails div p {
-    font-size: 1.5em;
-}
-
-.slideLeft {
-    left: -800px;
-}
-
-.opaque {
-    background: rgba(0,0,0,0.7)!important;
-}
-
-#detailExit {
-    background: #FFF;
-    color: rgba(0,0,0,0.3);
-    display: block;
-    font-family: "brandon-grotesque";
-    font-size: 3em;
-    font-weight: 900;
-    height: 80px;
-    line-height: 80px;
-    position: absolute;
-    text-align: center;
-    top: 100px;
-    right: -80px;
-    width: 80px;
-    z-index: 10000;
-}
-
-.hide, #detailExit {
-    display: none;
-}
